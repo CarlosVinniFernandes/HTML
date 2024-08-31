@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aula <a href="#local3">02</a></h1>
+    <a href="pagina2.html">Conteudo 2</a>
+    <hr>
+    <a target="_blank" href="http://www.cesupa.br">
+        <img width="1000px" src="https://www.cesupa.br/banners/2024.08.Renova%C3%A7%C3%A3o_de_Matr%C3%ADcula_2024.2.Nova_Prorroga%C3%A7%C3%A3o_banner_site.png" alt="este é pedro girotto">
+    </a>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ol>
+        <li>teste</li>
+        <li>mais</li>
+        <li>um</li>
+        <li>teste</li>
+        <li>Testando</li>
+        <li>123</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <li>teste</li>
+    <li>mais</li>
+    <li>um</li>
+    <li>teste</li>
+    <li>Testando</li>
+    <li>123</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+<li>teste</li>
+<li>mais</li>
+<li>um</li>
+<li>teste</li>
+<li>Testando</li>
+<li>123</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+    <p id="local3">Testando olá mundo olá mundo tudo bem</p>
+
+</body>
+</html>
