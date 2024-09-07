@@ -1,0 +1,15 @@
+
+h3{
+    color: goldenrod    ;
+}
+
+p{
+    color: blue;
+}
+
+table{
+    color: rgb(15, 128, 62);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: max-content;
+    border: 1px solid;
+}
