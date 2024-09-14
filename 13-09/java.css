@@ -1,0 +1,25 @@
+h2{
+    color: chartreuse;
+}
+
+p{
+    color: darkgreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#barrinha{
+    color: blue;
+    width: 50%;
+    height: 10px;
+    background-color: rgb(125, 233, 92);
+    border: 0px;
+    border-radius: 50px;
+}
+
+.teste{
+    background-color: coral;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
