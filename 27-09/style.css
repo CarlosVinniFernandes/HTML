@@ -1,0 +1,68 @@
+.retangulo {
+    border-radius: 20px; 
+    padding: 5px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 250px;
+    width: 250px; 
+    margin: auto;
+    margin-top: 10%;
+    opacity: 0.9;
+    background-image: url('https://www.oliberal.com/image/contentid/policy:1.311721:1601650005/Logo-Cesupa-PNG-Preto.png?f=9x6&q=1.0&w=700&$p$f$q$w=8e0c6ad');
+    background-size: 110%;
+    animation: hulk 5s infinite;
+}
+
+.retangulo:hover {
+    background-image: url('https://assets.about.me/background/users/r/c/a/rcasseb_1427750673_83.jpg');
+    background-size: 100%;
+}
+
+@keyframes hulk {
+    0% { background-color: #053F66; }
+    20% { background-color: #3ada12; }
+    100% { background-color: #ffffff; }
+}
+
+h1 {
+    text-align: center; /* Centraliza o texto */
+}
+
+table {
+    width: 250px;
+    height: 250px;
+    border-collapse: collapse; /* Remove espaços entre as células */
+    margin: auto; /* Centraliza a tabela */
+}
+
+td {
+    font-size: 100px;
+    padding: 10px;
+    text-align: center; /* Centraliza o texto nas células */
+    vertical-align: middle; /* Alinha verticalmente no meio */
+    border: 1px solid #000; /* Adiciona uma borda para as células */
+}
+
+div {
+    transition: transform 1s ease; /* Corrige para 'transform' */
+}
+
+div:hover {
+    transform: scale(1.2) rotate(10deg); /* Aplica transformação */
+}
+
+td.direita:hover {
+    transform: rotate(10deg);
+}
+
+td.esquerda:hover {
+    transform: rotate(-10deg);
+}
+
+.mudarCores {
+    animation: fonte 2s 1;
+}
+
+@keyframes fonte {
+    0% { color: black; }
+    100% { color: red; }
+}

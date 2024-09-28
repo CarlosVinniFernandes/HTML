@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="retangulo">
+        <h1><font color="white">Cesupa</font></h1>
+    </div>
+    <center>
+        <table border="1">
+            <tr>
+                <td class="esquerda" onclick="mudarCor(this)"><div>Casseb</div></td>
+                <td class="direita" onclick="mudarCor(this)"><div>Girotto</div></td>
+            </tr>
+            <tr>
+                <td class="esquerda" onclick="mudarCor(this)"><div>Alessandra</div></td>
+                <td class="direita" onclick="mudarCor(this)"><div>Isaac</div></td>
+            </tr>
+        </table>
+    </center>
+
+    <script>
+        function mudarCor(element) {
+            element.classList.toggle('mudarCores');
+        }
+    </script>
+
+</body>
+</html>
