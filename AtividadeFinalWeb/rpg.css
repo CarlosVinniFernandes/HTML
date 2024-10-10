@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+.classe {
+    text-align: center;
+}
+img {
+    border: 2px solid white;
+}

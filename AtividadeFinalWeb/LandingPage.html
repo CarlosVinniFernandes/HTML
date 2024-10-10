@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="landingpage.css"> 
+    <script src="landingpage.js" defer></script> 
+</head>
+<body>
+    <center>
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#video">Vídeo</a> |
+        <a href="#mapa">Mapa</a> |
+        <a href="#conteudo">Conteúdo</a>
+    </nav>
+
+    <div id="home">
+        <h1>Bem-vindo ao Strognoff Ideal</h1>
+        <p>Nesta página você aprenderá como fazer o strognoff dos seus sonhos e onde achar os melhores strognoff da cidade.</p>
+    </div>
+
+    <div id="video">
+        <h2>Como Preparar Um Strognoff Como Um Chef de Cozinha Renomado </h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xfZ4NIcRO-c?si=TbksSI38wlmHUzO1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div id="mapa">
+        <h2>Localização De Um Dos Melhores Strogonoff Da Região</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5376621563064!2d-48.48308192414068!3d-1.451741535831177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48fa462a179a9%3A0xe4ea14604f10b6d0!2sDandara%20Rest%C3%B4!5e0!3m2!1spt-BR!2sbr!4v1724958884591!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div id="conteudo">
+        <h2>Ingredientes, Utensílios e Algumas descrições:</h2>
+       
+        <table class="table-container">
+            <tr>
+                <td>
+                    <h3>Ingredientes:</h3>
+                    <p>Carne(ou frango) cortado em cubos, cebola picada, manteiga, mostarda, creme de leite, sal e pimenta do reino.</p>
+                    <button onclick="alertIngredient()">Mostrar Ingredientes</button> 
+                </td>
+                <td>
+                    <h3>Utensílios:</h3>
+                    <p>Uma panela grande, um prato fundo bem bonito, uma tábua de corte, uma colher de silicone e uma faca.</p>
+                    <button onclick="alertUtensils()">Mostrar Utensílios</button> 
+                </td>
+            </tr>
+        </table>
+
+       
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Tipos de Strogonoff</th>
+                <th>Melhores Cortes</th>
+                <th>Imagem</th>
+            </tr>
+            <tr>
+                <td>Carne</td>
+                <td>Filé mignon, Alcatra, Contrafilé e Patinho</td>
+                <td><img src="Strogonoff de carne.jpg" alt="Imagem 1" width="200"></td>
+            </tr>
+            <tr>
+                <td>Frango</td>
+                <td>Peito do frango cortado em cubos.</td>
+                <td><img src="Strogonoff de frango.jpg" alt="Imagem 2" width="200"></td>
+            </tr>
+        </table>
+    </div>
+
+    </center>
+
+</body>
+</html>
