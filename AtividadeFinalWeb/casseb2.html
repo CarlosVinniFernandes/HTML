@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>Spotifyseb</title>
+<link rel="stylesheet" type="text/css" href="spotify.css">
+<script src="spotify.js"></script>
 </head>
 <body bgcolor="black">
 <font color="white">
@@ -11,9 +13,9 @@
 <br>
 <nav>
 <font color="green">
-<a href="casseb.html"><font color="green">| Home | </font></a>
-<a href="kanye.html"><font color="green">Kanye West | </font></a>
-<a href="gorillaz.html"><font color="green">Gorillaz | </font></a>
+<a href="casseb2.html"><font color="green">| Home | </font></a>
+<a href="kanye.html" ><font color="green">Kanye West | </font></a>
+<a href="gorillaz.html" onclick="showAlert('Gorillaz')"><font color="green">Gorillaz | </font></a>
 <a href="thestrokes.html"><font color="green">The Strokes | </font></a>
 <a href="oasis.html"><font color="green">Oasis | </font></a>
 <font color="white">
@@ -24,13 +26,13 @@
 
     
 <table border="5">
-    <td><a href="kanye.html"><img src="https://cloudfront-us-east-1.images.arcpublishing.com/bloomberglinea/FGROL35OHJAHRABZQV5ILA2FPI.jpg" alt="" height="130px"></a></td>
+    <td><a href="kanye.html"><img src="https://cloudfront-us-east-1.images.arcpublishing.com/bloomberglinea/FGROL35OHJAHRABZQV5ILA2FPI.jpg"  onclick="showAlert('Kanye West')" alt="" height="130px"></a></td>
     <td><b>Kanye West</b></td>
-    <td><a href="gorillaz.html"><img src="https://ligadoamusica.com.br/wp-content/uploads/2018/05/gorillaz.jpg" alt="" height="125px"></a></td>
+    <td><a href="gorillaz.html"><img src="https://ligadoamusica.com.br/wp-content/uploads/2018/05/gorillaz.jpg" onclick="showAlert('Gorillaz')" alt="" height="125px" ></a></td>
     <td><b>Gorillaz</b></td>
-    <td><a href="thestrokes.html"><img src="https://i.scdn.co/image/ab67616100005174c3b137793230f4043feb0089" alt="" height="160px"></td>
+    <td><a href="thestrokes.html"><img src="https://i.scdn.co/image/ab67616100005174c3b137793230f4043feb0089" onclick="showAlert('The Strokes')" alt="" height="160px"></td>
     <td><b>The Strokes</b></td>
-    <td><a href="oasis.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNskWK-y97YykP29dA61cdRuln2hXNNs49xg&s" alt="" height="152px"></td>
+    <td><a href="oasis.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNskWK-y97YykP29dA61cdRuln2hXNNs49xg&s" onclick="showAlert('Oasis')" alt="" height="152px"></td>
     <td><b>Oasis</b></td>
 </table>
 
