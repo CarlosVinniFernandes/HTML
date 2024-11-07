@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel</title>
+    <link rel="stylesheet" href="papel.css">
+    <script src="papel.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img id="imagem-jogada" src="https://miro.medium.com/v2/resize:fit:2400/1*VkIKcHIOy6bUGcWrHjugxA.jpeg" alt="" width="500px" height="500px">
+        <h1>X1 conta o Casseb</h1>
+        <div class="escolha">
+          <button onclick="jogar('pedra')">Pedra</button>
+          <button onclick="jogar('papel')">Papel</button>
+          <button onclick="jogar('tesoura')">Tesoura</button>
+        </div>
+        <div class="result">
+          <p id="player-choice">Você escolheu: </p>
+          <p id="computer-choice">O Casseb escolheu: </p>
+          <h2 id="saida"></h2>
+        </div>
+      </div>
+</body>
+</html>
