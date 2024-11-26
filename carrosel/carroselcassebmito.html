@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Component</title>
+    <link rel="stylesheet" href="cassebs.css">
+</head>
+<body>
+    <div class="carousel">
+        <button class="arrow left" onclick="prevSlide()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg>
+        </button>
+
+        <div class="carousel-track">
+            <div class="carousel-slide">
+                <div class="carousel-image">
+                    <img src="https://media.graphassets.com/B45WrXnWQeOh5JIn1hgA" alt="Profile">
+                </div>
+                <div class="carousel-text">
+                    <h3>.Pedro Girotto</h3>
+                    <p>A Idopter Labs foi essencial para o sucesso do nosso projeto. Com sua equipe dedicada e inovadora, cada etapa foi conduzida com excelência, desde a análise inicial até a entrega final. Sua abordagem colaborativa e soluções personalizadas superaram nossas expectativas, trazendo eficiência e resultados impressionantes. Trabalhar com a Idopter Labs foi uma experiência enriquecedora e inspiradora!
+                    </p>
+                    <p><span class="author">Pedro Girotto</span> <span class="role">Professor de Matemática Discreta</span></p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="carousel-image">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQFrSHGt8EHSjA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1704373982806?e=2147483647&v=beta&t=BpKmHkcFhgTFMQ1M3OjjMD9e6WX6wLjosb_hSJsbpMQ" alt="Profile">
+                </div>
+                <div class="carousel-text">
+                    <h3>.Isaac Elgrably</h3>
+                    <p>Trabalhar com a Idopter Labs foi uma experiência incrível, especialmente no desenvolvimento backend com Java. A equipe demonstrou um domínio técnico impressionante, implementando soluções robustas e escaláveis. Cada etapa foi marcada por uma comunicação clara e foco na eficiência, resultando em um sistema seguro e altamente funcional. Com certeza, sua expertise em Java fez toda a diferença no sucesso do projeto!</p>
+                    <p><span class="author">Isaac Elgrably</span> <span class="role">Professor de POO</span></p>
+                </div>
+            </div>
+        </div>
+
+        <button class="arrow right" onclick="nextSlide()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 6l-1.41 1.41L13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+    </div>
+
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+        let currentIndex = 0;
+
+        function updateTrackPosition() {
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateTrackPosition();
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateTrackPosition();
+        }
+
+        window.addEventListener('resize', updateTrackPosition);
+
+        updateTrackPosition();
+    </script>
+</body>
+</html>
