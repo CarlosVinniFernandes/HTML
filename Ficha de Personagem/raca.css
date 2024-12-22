@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    padding: 20px;
+}
+.input-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+@media (min-width: 600px) {
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+/* Carousel styles */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    transition: transform 0.5s ease-in-out; /* Adicione esta linha para transição suave */
+}
+.carousel-item {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    position: relative;
+    text-align: center;
+}
+.carousel-item img {
+    width: 100%;
+    height: 500px; /* Defina a altura fixa para todas as imagens */
+    object-fit:contain; /* Ajuste a imagem para cobrir o contêiner */
+    border-radius: 5px;
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.carousel-button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.carousel-button.prev {
+    left: 10px;
+}
+.carousel-button.next {
+    right: 10px;
+}
